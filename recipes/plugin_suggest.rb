@@ -1,1 +1,1 @@
-install_plugin https://github.com/downloads/spinscale/elasticsearch-suggest-plugin/elasticsearch-suggest-#{node.elasticsearch[:plugin][:aws][:version]}.zip
+install_plugin "https://github.com/downloads/spinscale/elasticsearch-suggest-plugin/elasticsearch-suggest-#{node.elasticsearch[:plugin][:suggest][:version]}.zip suggest"
