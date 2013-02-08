@@ -7,10 +7,10 @@ settings = Chef::DataBagItem.load('elasticsearch', 'settings') rescue {}
 default.elasticsearch[:version]       = "0.20.4"
 default.elasticsearch[:repository]    = "elasticsearch/elasticsearch"
 default.elasticsearch[:filename]      = "elasticsearch-#{node.elasticsearch[:version]}.tar.gz"
-default.elasticsearch[:download_url]  = "https://github.com/downloads/" +
+default.elasticsearch[:download_url]  = "http://download.elasticsearch.org/" +
                                         "#{node.elasticsearch[:repository]}/#{node.elasticsearch[:filename]}"
 
-default.elasticsearch[:checksum]      = "6cc4c3a2439f48864050ba306c0e3569c064ad9097448b5452e11e3fc7c7d9e6"
+#default.elasticsearch[:checksum]      = "6cc4c3a2439f48864050ba306c0e3569c064ad9097448b5452e11e3fc7c7d9e6"
 
 # === INDEX ===
 #
